@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/connect_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Connect"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="64dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/status_view"
+        android:layout_below="@id/connect_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/subscribe_btn"
+        android:layout_marginLeft="32dp"
+        android:layout_below="@id/status_view"
+        android:layout_marginTop="64dp"
+        android:text="Subscribe" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/subscribe_btn"
+        android:hint="topic"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="16dp"
+        android:id="@+id/subscribe_topic"/>
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/subscribe_topic"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="32dp"
+        android:id="@+id/subscribe_view"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/publish_btn"
+        android:layout_marginRight="32dp"
+        android:layout_below="@id/status_view"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="64dp"
+        android:text="Publish" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/publish_btn"
+        android:hint="topic"
+        android:layout_marginRight="32dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="16dp"
+        android:id="@+id/publish_topic"/>
+
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/publish_topic"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="32dp"
+        android:id="@+id/publish_message"
+        android:hint="message"/>
+
+
+</RelativeLayout>

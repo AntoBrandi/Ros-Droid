@@ -1,0 +1,3 @@
+include ':ros_droid'
+include ':app'
+rootProject.name = "RosDroid"
